@@ -20,7 +20,17 @@ twig:
     strict_variables: %kernel.debug%
 
 # Doctrine Configuration
-
+doctrine_mongodb:
+    connections:
+        default:
+            server: mongodb://localhost:27017
+            options:
+                connect: true
+    default_database: sfprex
+    document_managers:
+        default:
+            auto_mapping: true
+            
 # Swiftmailer Configuration
 swiftmailer:
     transport: %mailer_transport%
