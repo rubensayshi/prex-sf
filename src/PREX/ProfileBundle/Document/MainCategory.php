@@ -2,10 +2,10 @@
 
 namespace Documents;
 
-/** @Document(collection="main_categories") */
+/** @MongoDB\Document(collection="main_categories") */
 class MainCategory
 {
-    /** @String */
+    /** @MongoDB\String */
     private $title;
 
     public function setTitle($title)

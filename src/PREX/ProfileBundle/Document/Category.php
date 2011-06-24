@@ -2,10 +2,10 @@
 
 namespace Documents;
 
-/** @Document(collection="categories") */
+/** @MongoDB\Document(collection="categories") */
 class Category
 {
-    /** @String */
+    /** @MongoDB\String */
     private $title;
     
     /** @EmbedOne(targetDocument="Category") */

@@ -2,16 +2,16 @@
 
 namespace Documents;
 
-/** @Document(collection="applications") */
+/** @MongoDB\Document(collection="applications") */
 class Application
 {
     /** 
-     * @String 
+     * @MongoDB\String 
      */
     private $solution;
     
     /**
-     * @Timestamp
+     * @MongoDB\Timestamp
      */
     private $created;
 

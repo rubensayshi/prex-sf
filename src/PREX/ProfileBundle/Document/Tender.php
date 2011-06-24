@@ -2,21 +2,21 @@
 
 namespace Documents;
 
-/** @Document(collection="tenders") */
+/** @MongoDB\Document(collection="tenders") */
 class Tender
 {
     /** 
-     * @String 
+     * @MongoDB\String 
      */
     private $title;
 
     /** 
-     * @String 
+     * @MongoDB\String 
      */
     private $body;
     
     /**
-     * @Timestamp
+     * @MongoDB\Timestamp
      */
     private $created;
 

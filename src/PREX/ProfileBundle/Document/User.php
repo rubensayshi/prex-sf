@@ -2,19 +2,19 @@
 
 namespace Documents;
 
-/** @Document(collection="users") */
+/** @MongoDB\Document(collection="users") */
 class User
 {    
-    /** @Id */
+    /** @MongoDB\Id */
     private $id;
     
-    /** @String */
+    /** @MongoDB\String */
     private $drupalId;
     
-     /** @String */
+     /** @MongoDB\String */
     private $username;
 
-    /** @BinDataMD5 */
+    /** @MongoDB\BinDataMD5 */
     private $password;
     
     /** @EmbedOne(targetDocument="Profile") */

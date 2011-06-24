@@ -2,16 +2,16 @@
 
 namespace Documents;
 
-/** @Document(collection="profiles") */
+/** @MongoDB\Document(collection="profiles") */
 class Profile
 {
     /** 
-     * @Id 
+     * @MongoDB\Id 
      */
     private $id;
 
     /**
-     * @String
+     * @MongoDB\String
      */
     private $firstname;
     
